@@ -41,5 +41,21 @@ namespace RegularExpressions
                 Console.WriteLine("Invalid name(Last Name should be in capital)-Please Check Your Name");
             }
         }
+
+        public void ValidEmail()
+        {
+            string email = @"^[a-zA-Z0-9]+[+-._]?[a-zA-Z0-9]*[+-._]?[a-zA-Z0-9]+@[a-zA-Z0-9]+[.]{1}[a-zA-Z]{2,3}[.]?[a-zA-Z]{0,3}$";
+            Console.WriteLine("Enter Email:");
+            string mail = Convert.ToString(Console.ReadLine());
+            Regex regex = new Regex(email);
+            if (regex.IsMatch(mail))
+            {
+                Console.WriteLine(mail + " is valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid email-Please Check Your email");
+            }
+        }
     }
 }

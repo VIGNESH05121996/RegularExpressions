@@ -7,6 +7,8 @@ namespace RegularExpressions
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Regular Expressions User Registration");
+            UserRegistration user = new UserRegistration();
+            user.FirstName();
         }
     }
 }

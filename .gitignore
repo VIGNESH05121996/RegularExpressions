@@ -1,0 +1,7 @@
+./
+../
+.vs/
+RegularExpressions/
+bin/
+obj/
+bin/Debug/

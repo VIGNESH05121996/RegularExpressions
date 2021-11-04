@@ -57,5 +57,21 @@ namespace RegularExpressions
                 Console.WriteLine("Invalid email-Please Check Your email");
             }
         }
+
+        public void MobileNumber()
+        {
+            string mobile = "^([0-9]{2}[ ][0-9]{10})|([0-9]{3}[ ][0-9]{10})$";
+            Console.WriteLine("Enter Mobile Number:");
+            string number = Convert.ToString(Console.ReadLine());
+            Regex regex = new Regex(mobile);
+            if (regex.IsMatch(number))
+            {
+                Console.WriteLine(number + " is valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid email-Please Check Your email");
+            }
+        }
     }
 }

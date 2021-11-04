@@ -121,5 +121,21 @@ namespace RegularExpressions
                 Console.WriteLine("Invalid password-Please Check Your password");
             }
         }
+
+        public void ValidPasswordRule4()
+        {
+            string password = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8}$";
+            Console.WriteLine("Enter Passwrod:");
+            string pass = Convert.ToString(Console.ReadLine());
+            Regex regex = new Regex(password);
+            if (regex.IsMatch(pass))
+            {
+                Console.WriteLine(pass + " is valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid password-Please Check Your password");
+            }
+        }
     }
 }

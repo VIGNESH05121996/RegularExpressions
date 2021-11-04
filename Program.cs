@@ -15,6 +15,7 @@ namespace RegularExpressions
             user.ValidPasswordRule1();
             user.ValidPasswordRule2();
             user.ValidPasswordRule3();
+            user.ValidPasswordRule4();
         }
     }
 }

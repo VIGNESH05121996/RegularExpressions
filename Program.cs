@@ -12,6 +12,7 @@ namespace RegularExpressions
             user.LastName();
             user.ValidEmail();
             user.MobileNumber();
+            user.ValidPasswordRule1();
         }
     }
 }

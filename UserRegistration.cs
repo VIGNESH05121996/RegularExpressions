@@ -70,7 +70,7 @@ namespace RegularExpressions
             }
             else
             {
-                Console.WriteLine("Invalid email-Please Check Your email");
+                Console.WriteLine("Invalid Mobile Number-Please Check Your email");
             }
         }
     }

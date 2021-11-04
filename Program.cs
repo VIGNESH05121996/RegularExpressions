@@ -9,6 +9,7 @@ namespace RegularExpressions
             Console.WriteLine("Welcome To Regular Expressions User Registration");
             UserRegistration user = new UserRegistration();
             user.FirstName();
+            user.LastName();
         }
     }
 }

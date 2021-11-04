@@ -25,5 +25,21 @@ namespace RegularExpressions
                 Console.WriteLine("Invalid name(First Name should be in capital)-Please Check Your Name");
             }
         }
+
+        public void LastName()
+        {
+            string lastName = "^[A-Z]{1}[a-zA-Z]{2,}$";
+            Console.WriteLine("Enter Last Name:");
+            string name = Convert.ToString(Console.ReadLine());
+            Regex regex = new Regex(lastName);
+            if (regex.IsMatch(name))
+            {
+                Console.WriteLine(name + " is valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid name(Last Name should be in capital)-Please Check Your Name");
+            }
+        }
     }
 }

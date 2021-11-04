@@ -70,7 +70,7 @@ namespace RegularExpressions
             }
             else
             {
-                Console.WriteLine("Invalid email-Please Check Your email");
+                Console.WriteLine("Invalid Mobile Number-Please Check Your email");
             }
         }
 
@@ -86,7 +86,7 @@ namespace RegularExpressions
             }
             else
             {
-                Console.WriteLine("Invalid email-Please Check Your password");
+                Console.WriteLine("Invalid password-Please Check Your password");
             }
         }
 
@@ -102,7 +102,23 @@ namespace RegularExpressions
             }
             else
             {
-                Console.WriteLine("Invalid email-Please Check Your password");
+                Console.WriteLine("Invalid password-Please Check Your password");
+            }
+        }
+
+        public void ValidPasswordRule3()
+        {
+            string password = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8}$";
+            Console.WriteLine("Enter Passwrod:");
+            string pass = Convert.ToString(Console.ReadLine());
+            Regex regex = new Regex(password);
+            if (regex.IsMatch(pass))
+            {
+                Console.WriteLine(pass + " is valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid password-Please Check Your password");
             }
         }
     }

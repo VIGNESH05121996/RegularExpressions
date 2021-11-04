@@ -14,6 +14,7 @@ namespace RegularExpressions
             user.MobileNumber();
             user.ValidPasswordRule1();
             user.ValidPasswordRule2();
+            user.ValidPasswordRule3();
         }
     }
 }

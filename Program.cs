@@ -13,6 +13,7 @@ namespace RegularExpressions
             user.ValidEmail();
             user.MobileNumber();
             user.ValidPasswordRule1();
+            user.ValidPasswordRule2();
         }
     }
 }

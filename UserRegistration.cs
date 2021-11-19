@@ -8,14 +8,14 @@ using System.Text.RegularExpressions;
 
 namespace RegularExpressions
 {
-    class UserRegistration
+    public class UserRegistration
     {
         public void FirstName()
         {
             string firstName = "^[A-Z]{1}[a-zA-Z]{2,}"; //Regular Expression shows that firstName starts with caps and minimum of 3 character
             string[] name = { "Vig", "vig", "Vignesh", "VIg", "Vig" }; //set of names to be validated
             Regex regex = new Regex(firstName); //calling Regex function
-            foreach(string word in name)
+            foreach (string word in name)
             {
                 if (regex.IsMatch(word))
                 {
@@ -27,11 +27,10 @@ namespace RegularExpressions
                 }
             }
         }
-
+        
         public void LastName()
         {
             string lastName = "^[A-Z]{1}[a-zA-Z]{2,}$"; //Regular Expression shows that lastName starts with caps and minimum of 3 character
-            Console.WriteLine("Enter Last Name:");
             string[] name = { "Mut", "mut", "Muthu", "MUt", "Mut" }; //set of last name to be validated
             Regex regex = new Regex(lastName); //calling Regex function
             foreach(string word in name)

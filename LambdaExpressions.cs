@@ -9,12 +9,6 @@ namespace RegularExpressions
 {
     public class LambdaExpressions
     {
-        //public string message;
-        //public LambdaExpressions(string message) //initilizing Constructor
-        //{
-        //    this.message = message;
-        //}
-
         public void FirstName()
         {
             List<string> name = new List<string>();
